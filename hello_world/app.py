@@ -44,7 +44,7 @@ def lambda_handler(event, context):
     logging.info("Hello World Gopi {}", event)
     bucketname = 'ensemblevc-rawdata'
     filename = 'ipos.csv'
-
+    # Adding New Comments
     #bucket_name = event['Records'][0]['s3']['bucket']['name']
     #file_key = event['Records'][0]['s3']['object']['key']
     csv_file = s3.get_object(Bucket=bucketname, Key=filename)
